@@ -1,40 +1,6 @@
-========================================================================
-    CONSOLE APPLICATION : VideosStream Project Overview
-========================================================================
+VideosStream Console Application Overview:
 
-AppWizard has created this VideosStream application for you.
+This program is written to record video from the BlackMagic Decklink Video Acquisition Card and sync with LabStreamingLayer (https://github.com/sccn/labstreaminglayer). It will only work with cameras that work as BMD streaming devices, as specified in the BlackMagic API manual. (http://hackipedia.org/Software/Libraries/Black%20Magic%20Design/Decklink%20SDK/Blackmagic%20Decklink%20SDK%20(December%202012).pdf)
 
-This file contains a summary of what you will find in each of the files that
-make up your VideosStream application.
-
-
-VideosStream.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-VideosStream.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-VideosStream.cpp
-    This is the main application source file.
-
-/////////////////////////////////////////////////////////////////////////////
-Other standard files:
-
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named VideosStream.pch and a precompiled types file named StdAfx.obj.
-
-/////////////////////////////////////////////////////////////////////////////
-Other notes:
-
-AppWizard uses "TODO:" comments to indicate parts of the source code you
-should add to or customize.
-
-/////////////////////////////////////////////////////////////////////////////
+To build this program three separate packages are required: Boost, LSL, and the DeckLink SDK. Boost can be downloaded at http://www.boost.org/, LSL can be downloaded from the github linked above, and the DeckLink SDK can be retrieved from BlackMagic Design's website https://www.blackmagicdesign.com/.
+Once downloaded, the locations of these packages must be specifed in the properties page of the VideosStream progject via File->Project Properties. 
