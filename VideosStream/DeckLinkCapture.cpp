@@ -159,7 +159,7 @@ bool DeckLinkCapture::start(BOOL m_record, int videoModeIndex) {
 	m_deckLinkInput->SetCallback(callback.get());
 
 	// Set the video input mode
-	if (m_deckLinkInput->EnableVideoInput(temp, bmdFormat8BitYUV, videoInputFlags) != S_OK)
+	if (m_deckLinkInput->EnableVideoInput(temp, bmdFormat8BitYUV, videoInputFlags) != S_OK) //This line must be edited to fit the correct video input mode of the camera i.e. "bmdFormat8BitYUV" must be changed.
 	{
 		return false;
 	}
