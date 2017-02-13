@@ -63,8 +63,8 @@ int main(int argc, char** argv)
 							ss << file[i];
 						}
 					}
-					cv::Size size(1920, 1080);
-					recorder.open(file, CV_FOURCC('D', 'I', 'V', 'X'), 30.00, size, true);
+					cv::Size size(1920, 1080); //This must edited to reflect the actual size of the image retrieved from the camera being used.
+					recorder.open(file, CV_FOURCC('D', 'I', 'V', 'X'), 30.00, size, true); //The number 30.00 must be edited to match the frame rate of the camera in use.
 					if (!recorder.isOpened()) {
 						std::cerr << "Videowriter could not be opened. The folder you wish to record in must exist before you write video there." << std::endl;
 					}
