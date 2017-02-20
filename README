@@ -1,0 +1,7 @@
+VideosStream README
+
+For a fully built version of the program tested on Windows 7 using a BlackMagic DeckLink MiniRecorder download all files in VideosStream_Precompiled.
+
+For the original source code, written in visual studio, look in the VideosStream folder.
+
+For more documentation, look at the wiki.
